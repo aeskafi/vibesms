@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  vibesms:
+    build: .
+    container_name: vibesms
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=4000
+    volumes:
+      - ./data:/app/data

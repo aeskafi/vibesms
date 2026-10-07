@@ -1,0 +1,46 @@
+{
+  "name": "vibesms",
+  "version": "1.0.0",
+  "description": "⚡ Autonomous Disposable SMS & Local OTP Verification Studio (Web Studio + Terminal TUI + Webhook Receiver).",
+  "exports": "./index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js web",
+    "web": "node index.js web",
+    "tui": "node index.js tui",
+    "test": "node --test __tests__/*.test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeskafi/vibesms.git"
+  },
+  "bin": {
+    "vibesms": "./index.js"
+  },
+  "keywords": [
+    "sms",
+    "disposable-sms",
+    "otp",
+    "verification-code",
+    "webhook",
+    "twilio",
+    "virtual-number",
+    "terminal-tui",
+    "web-studio"
+  ],
+  "author": "Arham Eskafi <arham@arham.dev> (https://arham.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aeskafi/vibesms/issues"
+  },
+  "homepage": "https://github.com/aeskafi/vibesms#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "chalk": "^5.4.1",
+    "commander": "^11.1.0",
+    "inquirer": "^9.3.7"
+  }
+}
